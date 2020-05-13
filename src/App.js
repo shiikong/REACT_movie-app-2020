@@ -2,6 +2,7 @@ import React from "react";
 // import PropTypes from "prop-types";
 import Axios from "axios";
 import Movie from "./Movie";
+import "./App.css";
 
 class App extends React.Component {
   state = {
@@ -23,30 +24,31 @@ class App extends React.Component {
     this.setState({ movies, isLoading: false });
   };
   componentDidMount() {
-    // setTimeout(() => {
-    //   this.setState({ isLoading: false });
-    // }, 3000);
     this.getMovies();
   }
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <div>
-        {isLoading
-          ? "Loading..."
-          : movies.map((movie) => {
-              return (
-                <Movie
-                  key={movie.id}
-                  id={movie.id}
-                  year={movie.year}
-                  title={movie.title}
-                  summary={movie.summary}
-                  poster={movie.medium_cover_image}
-                />
-              );
-            })}
-      </div>
+      <section className="container">
+        {isLoading ? (
+          <div className="loader">
+            <span className="loader__text">Loading...</span>
+          </div>
+        ) : (
+          <ul className="movies">
+            {movies.map((movie, index) => (
+              <Movie
+                key={index}
+                year={movie.year}
+                title={movie.title}
+                summary={movie.summary}
+                poster={movie.medium_cover_image}
+                genres={movie.genres}
+              />
+            ))}
+          </ul>
+        )}
+      </section>
     );
   }
 }
