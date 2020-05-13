@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/REACT_movie-app-2020/static/js/main.cd7766a8.chunk.js",
+    "main.js.map": "/REACT_movie-app-2020/static/js/main.cd7766a8.chunk.js.map",
+    "runtime-main.js": "/REACT_movie-app-2020/static/js/runtime-main.c58a4085.js",
+    "runtime-main.js.map": "/REACT_movie-app-2020/static/js/runtime-main.c58a4085.js.map",
+    "static/js/2.5f232f70.chunk.js": "/REACT_movie-app-2020/static/js/2.5f232f70.chunk.js",
+    "static/js/2.5f232f70.chunk.js.map": "/REACT_movie-app-2020/static/js/2.5f232f70.chunk.js.map",
+    "index.html": "/REACT_movie-app-2020/index.html",
+    "precache-manifest.08a22cab35524730eca297707202678e.js": "/REACT_movie-app-2020/precache-manifest.08a22cab35524730eca297707202678e.js",
+    "service-worker.js": "/REACT_movie-app-2020/service-worker.js",
+    "static/js/2.5f232f70.chunk.js.LICENSE.txt": "/REACT_movie-app-2020/static/js/2.5f232f70.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c58a4085.js",
+    "static/js/2.5f232f70.chunk.js",
+    "static/js/main.cd7766a8.chunk.js"
+  ]
+}
